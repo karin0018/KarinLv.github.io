@@ -1,12 +1,12 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/karin0018.github.io/images/icons/favicon-16x16.png?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/karin0018.github.io/images/icons/favicon-32x32.png?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="综述       通过学习这一章节，我们需要了解以下两方面内容： 理解网络层服务原理：  网络层服务模型 网络层上的重要功能：转发和选路 路由器工作原理 选路算法  因特网的网络层协议：  IP 协议 ICMP 协议 选路协议：RIP,OSPF,BGP                      1. 概念简介        网络层的作用：将报文段从发送主机传">
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/karin0018.github.io/images/icons/favicon-16x16.png?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/karin0018.github.io/images/icons/favicon-32x32.png?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="通过学习这一章节，我们需要理解网络层服务原理和因特网的网络层协议。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="计算机网络复习 - 网络层">
 <meta property="og:url" content="https://github.com/karin0018/karin0018.github.io/2021/01/26/ComputerNetworkReview-Chap4/index.html">
 <meta property="og:site_name" content="Karin Lv&#39;s Blog">
-<meta property="og:description" content="综述       通过学习这一章节，我们需要了解以下两方面内容： 理解网络层服务原理：  网络层服务模型 网络层上的重要功能：转发和选路 路由器工作原理 选路算法  因特网的网络层协议：  IP 协议 ICMP 协议 选路协议：RIP,OSPF,BGP                      1. 概念简介        网络层的作用：将报文段从发送主机传">
+<meta property="og:description" content="通过学习这一章节，我们需要理解网络层服务原理和因特网的网络层协议。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-01-25T16:24:20.000Z">
-<meta property="article:modified_time" content="2021-01-25T16:34:41.832Z">
+<meta property="article:modified_time" content="2021-01-25T16:40:17.882Z">
 <meta property="article:author" content="Karin Lv">
 <meta property="article:tag" content="复习笔记">
 <meta name="twitter:card" content="summary"><title>计算机网络复习 - 网络层 | Karin Lv's Blog</title><link ref="canonical" href="https://github.com/karin0018/karin0018.github.io/2021/01/26/ComputerNetworkReview-Chap4/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="/karin0018.github.io/css/index.css?v=2.6.2"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><script src="https://www.googletagmanager.com/gtag/js?id=G-C0DMRRZFFK" async=""></script><script>if (window.location.hostname !== 'localhost') {

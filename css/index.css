@@ -2282,10 +2282,6 @@ body::before {
   background-color: var(--color-card);
   float: right;
 }
-#disqus_thread {
-  width: 100%;
-  background-color: #fff;
-}
 .copy-button {
   position: absolute;
   top: 0;

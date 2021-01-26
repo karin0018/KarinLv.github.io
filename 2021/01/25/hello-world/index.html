@@ -1,12 +1,12 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/karin0018.github.io/images/icons/favicon-16x16.png?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/karin0018.github.io/images/icons/favicon-32x32.png?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="记录一下自己搭建的博客的心路历程...">
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/karin0018.github.io/images/icons/favicon-16x16.png?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/karin0018.github.io/images/icons/favicon-32x32.png?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="背景       看到某位同学搭了自己的博客，觉得有一个记录自己成长路线的博客好像挺香的…刚好寒假时间比较充裕，是个动手的好时机~ Github Pages 功能 +  Hexo 的博客框架 + 自己喜欢的主题 &#x3D; 华而有实的博客 使用 Github Pages 搭建博客的好处：  免费，免费，免费！ 都是静态文件，访问速度较优； 能和 git 搭配使用，管理起来都是熟悉的配">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo + stun 博客搭建">
 <meta property="og:url" content="https://github.com/karin0018/karin0018.github.io/2021/01/25/hello-world/index.html">
 <meta property="og:site_name" content="Karin Lv&#39;s Blog">
-<meta property="og:description" content="记录一下自己搭建的博客的心路历程...">
+<meta property="og:description" content="背景       看到某位同学搭了自己的博客，觉得有一个记录自己成长路线的博客好像挺香的…刚好寒假时间比较充裕，是个动手的好时机~ Github Pages 功能 +  Hexo 的博客框架 + 自己喜欢的主题 &#x3D; 华而有实的博客 使用 Github Pages 搭建博客的好处：  免费，免费，免费！ 都是静态文件，访问速度较优； 能和 git 搭配使用，管理起来都是熟悉的配">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-01-25T07:52:55.841Z">
-<meta property="article:modified_time" content="2021-01-26T07:51:59.792Z">
+<meta property="article:modified_time" content="2021-01-26T14:25:28.836Z">
 <meta property="article:author" content="Karin Lv">
 <meta property="article:tag" content="技术类">
 <meta name="twitter:card" content="summary"><title>hexo + stun 博客搭建 | Karin Lv's Blog</title><link ref="canonical" href="https://github.com/karin0018/karin0018.github.io/2021/01/25/hello-world/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="/karin0018.github.io/css/index.css?v=2.6.2"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><script src="https://www.googletagmanager.com/gtag/js?id=G-C0DMRRZFFK" async=""></script><script>if (window.location.hostname !== 'localhost') {
@@ -38,8 +38,219 @@ var CONFIG = {
   sourcePath: {"js":"js","css":"css","images":"images"},
 };
 
-window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner header-inner--height header-inner--bgcolor"><nav class="header-nav header-nav--sticky"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">hexo + stun 博客搭建</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2021-01-25</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-01-26</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">19</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon"><i class="far fa-clock"></i></span><span class="post-meta-item__info">阅读时长</span><span class="post-meta-item__value">1分</span></span><span class="post-meta-item post-meta-item--visitors"><span class="post-meta-item__icon"><i class="fas fa-eye"></i></span><span class="post-meta-item__info">阅读次数</span><span class="post-meta-item__value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body"><p>想记录一下自己搭建的博客的过程，明天更新….</p>
-</div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ 本文结束，感谢您的阅读 ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">本文作者: </span><span class="copyright-author__value"><a href="https://github.com/karin0018/karin0018.github.io">Karin Lv</a></span></div><div class="copyright-link"><span class="copyright-link__name">本文链接: </span><span class="copyright-link__value"><a href="https://github.com/karin0018/karin0018.github.io/2021/01/25/hello-world/">https://github.com/karin0018/karin0018.github.io/2021/01/25/hello-world/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">版权声明: </span><span class="copyright-notice__value">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> 许可协议。转载请注明出处！</span></div></div><div class="post-tags"><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="https://github.com/karin0018/karin0018.github.io/tags/%E6%8A%80%E6%9C%AF%E7%B1%BB/">技术类</a></span></div><nav class="post-paginator paginator"><div class="paginator-prev"><a class="paginator-prev__link" href="/karin0018.github.io/2021/01/26/ComputerNetworkReview-Chap4/"><span class="paginator-prev__icon"><i class="fas fa-angle-left"></i></span><span class="paginator-prev__text">计算机网络复习 - 网络层</span></a></div></nav></footer></div></div><div class="comments" id="comments"><div id="utterances-container"></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">文章目录</span><span class="sidebar-nav-ov">站点概览</span></div><section class="sidebar-toc"></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/icons/logo.jpg" alt="avatar"></div><p class="sidebar-ov-author__text">Karin</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/karin0018" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a><a class="sidebar-ov-social-item" href="mailto:karinlv777@gmail.com" target="_blank" rel="noopener" data-popover="social.Gmail" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">Gmail</span></a><a class="sidebar-ov-social-item" href="mailto:1263670364@qq.com" target="_blank" rel="noopener" data-popover="social.QQmail" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">QQ 邮箱</span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">2</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">2</div><div class="sidebar-ov-state-item__name">分类</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">2</div><div class="sidebar-ov-state-item__name">标签</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/karin0018.github.io/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">你已阅读了 </span><span class="sidebar-reading-info__num">0</span><span class="sidebar-reading-info__perc">%</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2021</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>Karin Lv</span></div><div class="busuanzi"><span class="busuanzi-siteuv"><span class="busuanzi-siteuv__icon"><i class="fas fa-user"></i></span><span class="busuanzi-siteuv__info">访问人数</span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_uv"></span></span><span class="busuanzi-sitepv"><span class="busuanzi-siteuv__icon"><i class="fas fa-eye"></i></span><span class="busuanzi-siteuv__info">浏览总量</span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_pv"></span></span></div><div>To live is to change the world.</div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/gh/sukkaw/busuanzi@latest/bsz.pure.mini.js" async></script><script>function loadUtterances() {
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner header-inner--height header-inner--bgcolor"><nav class="header-nav header-nav--sticky"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">hexo + stun 博客搭建</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2021-01-25</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-01-26</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">1.7k</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon"><i class="far fa-clock"></i></span><span class="post-meta-item__info">阅读时长</span><span class="post-meta-item__value">14分</span></span><span class="post-meta-item post-meta-item--visitors"><span class="post-meta-item__icon"><i class="fas fa-eye"></i></span><span class="post-meta-item__info">阅读次数</span><span class="post-meta-item__value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body">
+        <h1 id="背景">
+          <a href="#背景" class="heading-link"><i class="fas fa-link"></i></a><a href="#背景" class="headerlink" title="背景"></a>背景</h1>
+      <p>看到某位同学搭了自己的博客，觉得有一个记录自己成长路线的博客好像挺香的…刚好寒假时间比较充裕，是个动手的好时机~</p>
+<p>Github Pages 功能 +  Hexo 的博客框架 + 自己喜欢的主题 = 华而有实的博客</p>
+<p>使用 Github Pages 搭建博客的好处：</p>
+<ol>
+<li>免费，免费，免费！</li>
+<li>都是静态文件，访问速度较优；</li>
+<li>能和 git 搭配使用，管理起来都是熟悉的配方；</li>
+</ol>
+<p>使用 hexo 的好处：</p>
+<ol>
+<li>简洁高效，安装简单；</li>
+<li>有多种稳定、美观的主题可以挑选；</li>
+<li>使用 Markdown 解析文章，符合自己平时写东西的习惯；</li>
+</ol>
+<blockquote>
+<p>当然其他框架也有各自的优点，这个选择凭各自喜好啦~</p>
+</blockquote>
+<p><strong>本教程以 windows 为例</strong></p>
+<a id="more"></a>
+
+
+        <h1 id="Github-Pages">
+          <a href="#Github-Pages" class="heading-link"><i class="fas fa-link"></i></a><a href="#Github-Pages" class="headerlink" title="Github Pages"></a>Github Pages</h1>
+      <p><strong>基于 <span class="exturl"><a class="exturl__link" target="_blank" rel="noopener" href="https://docs.github.com/cn/github/working-with-github-pages/creating-a-github-pages-site">Github Pages 官方文档</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></strong></p>
+<p>前提是要有 github 账号，没有的同学们可以先去注册一个~</p>
+<ol>
+<li><p>创建 Github Pages 站点：</p>
+<ul>
+<li>新建一个仓库；</li>
+<li>输入仓库的名称和说明（可选）。 如果您创建的是用户或组织站点，仓库名称<strong>必须为</strong> <code>&lt;user&gt;.github.io</code> 或 <code>&lt;organization&gt;.github.io</code> ；</li>
+<li>设置仓库属性为 <code>public</code> ;</li>
+<li>选择 <code>Initialize this repository with a README</code>（使用 readme 文件初始化此仓库；</li>
+<li><code>create repository</code></li>
+</ul>
+</li>
+<li><p>设置站点：</p>
+<ul>
+<li><p>在站点仓库下，找到右上角 <code>Settings</code></p>
+</li>
+<li><p>下滑，找到<code>Github Pages</code>选项卡，你能看到站点的 url 啦~</p>
+<blockquote>
+<p>这个 url 就是你网站的地址，通过它，大家就能访问到你的博客。</p>
+</blockquote>
+</li>
+<li><p>Source 栏的 branch 选择 main（或者 master，总之就是除了 none 之外的那个），点击 save；</p>
+</li>
+<li><p>Theme Chooser 那个不用管，因为后续要使用 hexo 的主题嘛；</p>
+</li>
+<li><p>将仓库克隆到本地，用 git 配置自己的身份信息：</p>
+  <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;github user name&quot;</span><br><span class="line">git config --global user.email &quot;github user email&quot;</span><br></pre></td></tr></table></div></figure></li>
+<li><p><span class="exturl"><a class="exturl__link" target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/896043488029600/896954117292416">添加 ssh-key</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>（注意不要设置密码）主要是为了以后 hexo 发布比较方便。</p>
+</li>
+</ul>
+</li>
+</ol>
+
+        <h1 id="hexo">
+          <a href="#hexo" class="heading-link"><i class="fas fa-link"></i></a><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h1>
+      <p><strong>基于 <span class="exturl"><a class="exturl__link" target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">hexo</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> 官方文档</strong></p>
+
+        <h2 id="安装">
+          <a href="#安装" class="heading-link"><i class="fas fa-link"></i></a><a href="#安装" class="headerlink" title="安装"></a>安装</h2>
+      <p>安装 hexo 之前，先来把环境搞好：</p>
+<ul>
+<li>安装 <span class="exturl"><a class="exturl__link" target="_blank" rel="noopener" href="http://nodejs.org/">Node.js</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> (Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本)</li>
+<li>安装 Git （ 不过 github 那一步都搞好了，这里就不用了吧~）</li>
+</ul>
+<blockquote>
+<p>这里具体的安装细节提示可以直接参考各自官方文档，或者网上找找教程。</p>
+</blockquote>
+<p>现在可以安装 hexo。</p>
+<p>在合适的地方新建一个文件夹，用来存放自己的博客文件，比如我的博客文件都存放在<code>D:/blog</code>目录下。</p>
+<p>我使用 Windows 自带的控制台定位到<code>D:/blog</code>目录下执行以下操作：</p>
+<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$npm install -g hexo-cli</span><br></pre></td></tr></table></div></figure>
+<blockquote>
+<p>据说 linux 和 max 里是要在前面加个 sudo，不然会因为权限问题报错。</p>
+</blockquote>
+<p>装完输入 <code>hexo --version</code> 检查是否安装成功。</p>
+
+        <h2 id="建站">
+          <a href="#建站" class="heading-link"><i class="fas fa-link"></i></a><a href="#建站" class="headerlink" title="建站"></a>建站</h2>
+      <p><code>hexo init</code> 初始化文件夹；</p>
+<p><code>npm install</code> 安装必须的插件；</p>
+<p><code>hexo g</code> 生成静态文件；</p>
+<p><code>hexo s</code> 将静态文件运行在本地服务器上，这个时候根据提示打开 <code>localhost:4000</code> 就能看到最基本的博客啦~</p>
+<p><code>ctrl+c</code> 关闭本地服务器；</p>
+
+        <h2 id="与-github-连接">
+          <a href="#与-github-连接" class="heading-link"><i class="fas fa-link"></i></a><a href="#与-github-连接" class="headerlink" title="与 github 连接"></a>与 github 连接</h2>
+      <p>打开 blog 根目录下的 <code>_config.yml</code> 文件，修改配置：</p>
+<figure class="highlight yml"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="comment">## If your site is put in a subdirectory, set url as &#x27;http://example.com/child&#x27; and root as &#x27;/child/&#x27;</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">https://github.com/xxx/xxx.github.io/</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/xxx.github.io/</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">:year/:month/:day/:title/</span></span><br><span class="line"><span class="attr">permalink_defaults:</span></span><br><span class="line"><span class="attr">pretty_urls:</span></span><br><span class="line">  <span class="attr">trailing_index:</span> <span class="literal">true</span> <span class="comment"># Set to false to remove trailing &#x27;index.html&#x27; from permalinks</span></span><br><span class="line">  <span class="attr">trailing_html:</span> <span class="literal">true</span> <span class="comment"># Set to false to remove trailing &#x27;.html&#x27; from</span></span><br><span class="line"></span><br><span class="line"><span class="string">...</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">git@github.com:xxx/xxx.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span></span><br></pre></td></tr></table></div></figure>
+<p>还是在 blog 根目录下：</p>
+<figure class="highlight c"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g <span class="comment">// 编译生成静态文件（每次修改完都必须重新编译）</span></span><br><span class="line">hexo d <span class="comment">// 将博客发布到 github 上</span></span><br></pre></td></tr></table></div></figure>
+<p>现在可以通过 <code>https://xxx.github.io</code> 来访问你的博客啦~</p>
+
+        <h1 id="主题-stun">
+          <a href="#主题-stun" class="heading-link"><i class="fas fa-link"></i></a><a href="#主题-stun" class="headerlink" title="主题 - stun"></a>主题 - stun</h1>
+      <p>博主选的是 stun 这个主题，主要是看中了她 <del>可甜可盐</del>  活泼大方、简洁美观 的风格，当然她不是最简洁的，最简洁的应该是 Next 这个主题了吧（</p>
+<p>这个官方文档超级全的！！！而且步骤都很详细！！！</p>
+<p>我在这里就不瞎写了，反正写的没有官网好，照着来没错的，嗯！</p>
+<p>官网指路：<span class="exturl"><a class="exturl__link" target="_blank" rel="noopener" href="https://theme-stun.github.io/docs/zh-CN/guide/quick-start.html#%E5%AE%89%E8%A3%85">stun</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
+<p>emm</p>
+<p>emmm</p>
+<p>emmmm</p>
+<p>那我写点推荐和排雷：</p>
+
+        <h2 id="统计与分析推荐">
+          <a href="#统计与分析推荐" class="heading-link"><i class="fas fa-link"></i></a><a href="#统计与分析推荐" class="headerlink" title="统计与分析推荐"></a>统计与分析推荐</h2>
+      <p>首推 <span class="exturl"><a class="exturl__link" target="_blank" rel="noopener" href="https://theme-stun.github.io/docs/zh-CN/advanced/third-part.html#%E8%B0%B7%E6%AD%8C%E5%88%86%E6%9E%90">谷歌分析</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> ！！！ 简单好用不要钱！！！</p>
+<p>来一篇好用的配置教程：<span class="exturl"><a class="exturl__link" target="_blank" rel="noopener" href="https://www.yundianseo.com/how-to-use-google-analytics/">Google Analytics怎么用，谷歌分析工具使用教程</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
+
+        <h2 id="评论系统推荐">
+          <a href="#评论系统推荐" class="heading-link"><i class="fas fa-link"></i></a><a href="#评论系统推荐" class="headerlink" title="评论系统推荐"></a>评论系统推荐</h2>
+      <p>博主尝试了三种评论系统，各自利弊写在下面奥：</p>
+<ol>
+<li><p>Disqus</p>
+<p> 优点：</p>
+<ul>
+<li><p>配置简单（所以博主最先选的就是这个）</p>
+</li>
+<li><p>完善的后台管理机制</p>
+</li>
+<li><p>丰富的表情可选</p>
+</li>
+<li><p>支持 markdown</p>
+<p>缺点：</p>
+</li>
+<li><p>服务器在国外，不翻墙加载不出来</p>
+</li>
+<li><p>存在广告植入</p>
+</li>
+<li><p>要评论必须有 disqus  / google / Twitter/ facebook 账户</p>
+</li>
+</ul>
+</li>
+</ol>
+<ol start="2">
+<li><p>Valine</p>
+<p> 优点：</p>
+<ul>
+<li><p>配置简单（但没有 disqus 简单）</p>
+</li>
+<li><p>无后端，所以加载起来很快</p>
+</li>
+<li><p>页面设计简洁</p>
+</li>
+<li><p>评论不用登陆任何账户</p>
+</li>
+<li><p>支持 markdown</p>
+<p>缺点：</p>
+</li>
+<li><p>页面设计过于简洁（我试验过之后才发现，是真的很简洁，白白的，也没有点赞的功能，想要拥有一个头像都要花挺多功夫</p>
+</li>
+<li><p>评论可以匿名（某同学说可能会有恶意评论，博主觉得他说的有道理…</p>
+</li>
+</ul>
+</li>
+</ol>
+<ol start="3">
+<li><p>Utterances</p>
+<p> 优点：</p>
+<ul>
+<li><p>配置看上去复杂但其实很简单：</p>
+<p>  将 <a href="https://github.com/apps/utterances">utterances app (opens new window)</a>安装在你博客对应的 Github 仓库中。然后，按照 stun 官网的提示修改配置项即可；</p>
+</li>
+<li><p>是一个基于 github issues 的评论系统，管理方便；</p>
+</li>
+<li><p>支持 emoji 支持评论点赞</p>
+</li>
+<li><p>支持 markdown</p>
+<p>缺点：</p>
+</li>
+<li><p>需要登录 github 账户才能评论（是缺点也是优点吧）</p>
+</li>
+</ul>
+</li>
+</ol>
+
+        <h2 id="bug-分享">
+          <a href="#bug-分享" class="heading-link"><i class="fas fa-link"></i></a><a href="#bug-分享" class="headerlink" title="bug 分享"></a>bug 分享</h2>
+      
+        <h3 id="multiline-key">
+          <a href="#multiline-key" class="heading-link"><i class="fas fa-link"></i></a><a href="#multiline-key" class="headerlink" title="multiline key"></a>multiline key</h3>
+      <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">message: &#39;can not read a block mapping entry; a multiline key may not be an implicit key at line 7, column 9:\n&#39;</span><br><span class="line">&quot;    subtitle: &#39;If you shed tears when you mi ... \n&quot; +</span><br></pre></td></tr></table></div></figure>
+<p>网上大部分说是在对应位置缺了英文空格，但我不是这个错…</p>
+<p>这里要注意，错误可能不在这一行，可能出现在它前一行：</p>
+<figure class="highlight yml"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">&#x27;Karin Lv&#x27;</span><span class="string">s</span> <span class="string">Blog&#x27;</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">&#x27;If you shed tears...</span></span><br></pre></td></tr></table></div></figure>
+<p>我就是出现在它上一行的，这里单引号中间还有一个单引号，不符合语法规则了，所以报错…</p>
+<p>去掉外层的单引号就好了！</p>
+
+        <h3 id="invalid-characters">
+          <a href="#invalid-characters" class="heading-link"><i class="fas fa-link"></i></a><a href="#invalid-characters" class="headerlink" title="invalid characters"></a>invalid characters</h3>
+      <p>出现非法字符，大概率是因为在配置文件里写了中文，但没有相应的设置。</p>
+<p>博主的做法比较简单粗暴：配置文件里尽量不写中文，都改成英文 QAQ</p>
+<blockquote>
+<p>大家可以在网上搜一下更专业的解决办法，不要学这个懒博主（</p>
+</blockquote>
+</div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ 本文结束，感谢您的阅读 ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">本文作者: </span><span class="copyright-author__value"><a href="https://github.com/karin0018/karin0018.github.io">Karin Lv</a></span></div><div class="copyright-link"><span class="copyright-link__name">本文链接: </span><span class="copyright-link__value"><a href="https://github.com/karin0018/karin0018.github.io/2021/01/25/hello-world/">https://github.com/karin0018/karin0018.github.io/2021/01/25/hello-world/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">版权声明: </span><span class="copyright-notice__value">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> 许可协议。转载请注明出处！</span></div></div><div class="post-tags"><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="https://github.com/karin0018/karin0018.github.io/tags/%E6%8A%80%E6%9C%AF%E7%B1%BB/">技术类</a></span></div><nav class="post-paginator paginator"><div class="paginator-prev"><a class="paginator-prev__link" href="/karin0018.github.io/2021/01/26/ComputerNetworkReview-Chap4/"><span class="paginator-prev__icon"><i class="fas fa-angle-left"></i></span><span class="paginator-prev__text">计算机网络复习 - 网络层</span></a></div></nav></footer></div></div><div class="comments" id="comments"><div id="utterances-container"></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">文章目录</span><span class="sidebar-nav-ov">站点概览</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%83%8C%E6%99%AF"><span class="toc-number">1.</span> <span class="toc-text">
+          背景</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Github-Pages"><span class="toc-number">2.</span> <span class="toc-text">
+          Github Pages</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#hexo"><span class="toc-number">3.</span> <span class="toc-text">
+          hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-number">3.1.</span> <span class="toc-text">
+          安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BB%BA%E7%AB%99"><span class="toc-number">3.2.</span> <span class="toc-text">
+          建站</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8E-github-%E8%BF%9E%E6%8E%A5"><span class="toc-number">3.3.</span> <span class="toc-text">
+          与 github 连接</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98-stun"><span class="toc-number">4.</span> <span class="toc-text">
+          主题 - stun</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%9F%E8%AE%A1%E4%B8%8E%E5%88%86%E6%9E%90%E6%8E%A8%E8%8D%90"><span class="toc-number">4.1.</span> <span class="toc-text">
+          统计与分析推荐</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E6%8E%A8%E8%8D%90"><span class="toc-number">4.2.</span> <span class="toc-text">
+          评论系统推荐</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#bug-%E5%88%86%E4%BA%AB"><span class="toc-number">4.3.</span> <span class="toc-text">
+          bug 分享</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#multiline-key"><span class="toc-number">4.3.1.</span> <span class="toc-text">
+          multiline key</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#invalid-characters"><span class="toc-number">4.3.2.</span> <span class="toc-text">
+          invalid characters</span></a></li></ol></li></ol></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/icons/logo.jpg" alt="avatar"></div><p class="sidebar-ov-author__text">Karin</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/karin0018" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a><a class="sidebar-ov-social-item" href="mailto:karinlv777@gmail.com" target="_blank" rel="noopener" data-popover="social.Gmail" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">Gmail</span></a><a class="sidebar-ov-social-item" href="mailto:1263670364@qq.com" target="_blank" rel="noopener" data-popover="social.QQmail" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">QQ 邮箱</span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">2</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">2</div><div class="sidebar-ov-state-item__name">分类</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">2</div><div class="sidebar-ov-state-item__name">标签</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/karin0018.github.io/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">你已阅读了 </span><span class="sidebar-reading-info__num">0</span><span class="sidebar-reading-info__perc">%</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2021</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>Karin Lv</span></div><div class="busuanzi"><span class="busuanzi-siteuv"><span class="busuanzi-siteuv__icon"><i class="fas fa-user"></i></span><span class="busuanzi-siteuv__info">访问人数</span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_uv"></span></span><span class="busuanzi-sitepv"><span class="busuanzi-siteuv__icon"><i class="fas fa-eye"></i></span><span class="busuanzi-siteuv__info">浏览总量</span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_pv"></span></span></div><div>To live is to change the world.</div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/gh/sukkaw/busuanzi@latest/bsz.pure.mini.js" async></script><script>function loadUtterances() {
   var d = document, s = d.createElement('script');
   var container = d.getElementById('utterances-container');
 

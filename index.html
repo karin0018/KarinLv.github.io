@@ -46,55 +46,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></he
 </li>
 <li><p>点击 <code>No thanks,just start my download</code> 跳过注册过程，直接下载压缩包。</p>
 </li>
-</ol>
-
-        <h1 id="安装与配置">
-          <a href="#安装与配置" class="heading-link"><i class="fas fa-link"></i></a><a href="#安装与配置" class="headerlink" title="安装与配置"></a>安装与配置</h1>
-      <ul>
-<li><p>在指定路径解压，将解压后 bin 文件的路径（<code>D:\mysql-8.0.23-winx64\bin</code>）添加到系统环境变量中：</p>
-<blockquote>
-<p>我的电脑-&gt;属性-&gt;高级-&gt;环境变量<br>选择PATH,在其后面添加: 你的 mysql bin 文件夹的路径</p>
-</blockquote>
-</li>
-<li><p>使用管理员身份打开 cmd：</p>
-<blockquote>
-<p>在开始菜单中输入 cmd，选择用管理员身份打开；</p>
-</blockquote>
-</li>
-<li><p>跳转到 mysql bin 目录下：</p>
-<img src="/2021/01/27/mysql-install/2.PNG" class title="This is an bin path"></li>
-<li><p>安装 mysql</p>
-<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld -install</span><br></pre></td></tr></table></div></figure></li>
-<li><p>初始化 mysql（一定要初始化！否则容易导致启动不成功）</p>
-<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld --initialize</span><br></pre></td></tr></table></div></figure></li>
-<li><p>启动服务</p>
-<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$net start mysql</span><br></pre></td></tr></table></div></figure>
-<img src="/2021/01/27/mysql-install/3.PNG" class title="This is an start successfully image">
-
-<blockquote>
-<p>这里直接写 mysql 是因为我主机服务中 mysql 的服务名就是 mysql，如果大家出现了启动不成功的情况可以自行搜索是不是服务名不同。</p>
-</blockquote>
-</li>
-<li><p>登录 mysql：</p>
-<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -u root -p</span><br></pre></td></tr></table></div></figure>
-<p>据说第一次登录不需要密码，直接按回车就好了，但是博主按了回车发现不行。出现报错 <code>ERROR 1045 (28000): Access denied for user &#39;root&#39;@&#39;localhost&#39; (using password: NO)</code></p>
-<img src="/2021/01/27/mysql-install/4.PNG" class title="This is an start failed image">
-<p>看来还是需要我们输入密码，下面一起找密码吧：</p>
-<ol>
-<li>打开 mysql 的根目录下名为 data 的文件夹；</li>
-<li>找到以 <code>.err</code> 为结尾的文件（专门记录报错信息的）并打开；</li>
-<li>找到自动生成的密码啦！<img src="/2021/01/27/mysql-install/5.PNG" class title="This is an password image"></li>
-<li>输入密码即可~<img src="/2021/01/27/mysql-install/6.PNG" class title="This is an load successfully image">
-
-</li>
-</ol>
-</li>
-</ul>
-
-        <h1 id="通过-vscode-连接-mysql">
-          <a href="#通过-vscode-连接-mysql" class="heading-link"><i class="fas fa-link"></i></a><a href="#通过-vscode-连接-mysql" class="headerlink" title="通过 vscode 连接 mysql"></a>通过 vscode 连接 mysql</h1>
-      <p>待更新~~~</p>
-</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/01/26/hexo-stun/">hexo+stun博客搭建</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2021-01-26</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-01-27</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">1.7k</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon"><i class="far fa-clock"></i></span><span class="post-meta-item__info">阅读时长</span><span class="post-meta-item__value">14分</span></span></div></header><div class="post-body"><div class="post-excerpt"><h1 id="背景">
+</ol></div><div class="post-readmore"><a class="post-readmore__link" href="/2021/01/27/mysql-install/"><span class="post-readmore__text">阅读全文</span><span class="post-readmore__icon"><i class="fas fa-long-arrow-alt-right"></i></span></a></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/01/26/hexo-stun/">hexo+stun博客搭建</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2021-01-26</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-01-27</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">1.7k</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon"><i class="far fa-clock"></i></span><span class="post-meta-item__info">阅读时长</span><span class="post-meta-item__value">14分</span></span></div></header><div class="post-body"><div class="post-excerpt"><h1 id="背景">
           <a href="#背景" class="heading-link"><i class="fas fa-link"></i></a><a href="#背景" class="headerlink" title="背景"></a>背景</h1>
       <p>看到某位同学搭了自己的博客，觉得有一个记录自己成长路线的博客好像挺香的…刚好寒假时间比较充裕，是个动手的好时机~</p>
 <p>Github Pages 功能 +  Hexo 的博客框架 + 自己喜欢的主题 = 华而有实的博客</p></div><div class="post-readmore"><a class="post-readmore__link" href="/2021/01/26/hexo-stun/"><span class="post-readmore__text">阅读全文</span><span class="post-readmore__icon"><i class="fas fa-long-arrow-alt-right"></i></span></a></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/01/26/ComputerNetworkReview-Chap4/">计算机网络复习 - 网络层</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2021-01-26</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-01-27</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">1k</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon"><i class="far fa-clock"></i></span><span class="post-meta-item__info">阅读时长</span><span class="post-meta-item__value">7分</span></span></div></header><div class="post-body"><div class="post-excerpt"><h1 id="综述">

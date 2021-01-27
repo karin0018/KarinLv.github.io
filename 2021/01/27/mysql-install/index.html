@@ -1,0 +1,133 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon-16x16.png?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon-32x32.png?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="本教程基于 windows10(64位) 操作系统                     下载        访问 官网下载地址   点击 No thanks,just start my download 跳过注册过程，直接下载压缩包。                       安装与配置        在指定路径解压，将解压后 bin 文件的路径（D:\mysql-8.0.23-winx64">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MySQL 安装教程 + 排坑">
+<meta property="og:url" content="https://github.com/karin0018/karin0018.github.io/2021/01/27/mysql-install/index.html">
+<meta property="og:site_name" content="Karin Lv&#39;s Blog">
+<meta property="og:description" content="本教程基于 windows10(64位) 操作系统                     下载        访问 官网下载地址   点击 No thanks,just start my download 跳过注册过程，直接下载压缩包。                       安装与配置        在指定路径解压，将解压后 bin 文件的路径（D:\mysql-8.0.23-winx64">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://github.com/2021/01/27/mysql-install/1.PNG">
+<meta property="og:image" content="https://github.com/2021/01/27/mysql-install/2.PNG">
+<meta property="og:image" content="https://github.com/2021/01/27/mysql-install/3.PNG">
+<meta property="og:image" content="https://github.com/2021/01/27/mysql-install/4.PNG">
+<meta property="og:image" content="https://github.com/2021/01/27/mysql-install/5.PNG">
+<meta property="og:image" content="https://github.com/2021/01/27/mysql-install/6.PNG">
+<meta property="article:published_time" content="2021-01-27T14:58:11.000Z">
+<meta property="article:modified_time" content="2021-01-27T15:30:22.270Z">
+<meta property="article:author" content="Karin Lv">
+<meta property="article:tag" content="mysql">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/2021/01/27/mysql-install/1.PNG"><title>MySQL 安装教程 + 排坑 | Karin Lv's Blog</title><link ref="canonical" href="https://github.com/karin0018/karin0018.github.io/2021/01/27/mysql-install/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.6.2"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><script src="https://www.googletagmanager.com/gtag/js?id=G-C0DMRRZFFK" async=""></script><script>if (window.location.hostname !== 'localhost') {
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-C0DMRRZFFK');
+}</script><script>var Stun = window.Stun || {};
+var CONFIG = {
+  root: '/',
+  algolia: undefined,
+  assistSearch: undefined,
+  fontIcon: {"prompt":{"success":"fas fa-check-circle","info":"fas fa-arrow-circle-right","warning":"fas fa-exclamation-circle","error":"fas fa-times-circle"},"copyBtn":"fas fa-copy"},
+  sidebar: {"offsetTop":"20px","tocMaxDepth":6},
+  header: {"enable":true,"showOnPost":false,"scrollDownIcon":true},
+  postWidget: {"endText":true},
+  nightMode: {"enable":true},
+  back2top: {"enable":true},
+  codeblock: {"style":"default","highlight":"light","wordWrap":false},
+  reward: false,
+  fancybox: false,
+  zoomImage: {"gapAside":"20px"},
+  galleryWaterfall: undefined,
+  lazyload: false,
+  pjax: undefined,
+  externalLink: {"icon":{"enable":true,"name":"fas fa-external-link-alt"}},
+  shortcuts: undefined,
+  prompt: {"copyButton":"复制","copySuccess":"复制成功","copyError":"复制失败"},
+  sourcePath: {"js":"js","css":"css","images":"images"},
+};
+
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner header-inner--height header-inner--bgcolor"><nav class="header-nav header-nav--sticky"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">MySQL 安装教程 + 排坑</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2021-01-27</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-01-27</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">382</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon"><i class="far fa-clock"></i></span><span class="post-meta-item__info">阅读时长</span><span class="post-meta-item__value">3分</span></span><span class="post-meta-item post-meta-item--visitors"><span class="post-meta-item__icon"><i class="fas fa-eye"></i></span><span class="post-meta-item__info">阅读次数</span><span class="post-meta-item__value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body"><p><strong>本教程基于 windows10(64位) 操作系统</strong></p>
+
+        <h1 id="下载">
+          <a href="#下载" class="heading-link"><i class="fas fa-link"></i></a><a href="#下载" class="headerlink" title="下载"></a>下载</h1>
+      <ol>
+<li><p>访问 <span class="exturl"><a class="exturl__link" target="_blank" rel="noopener" href="https://dev.mysql.com/downloads/mysql/">官网下载地址</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
+<img src="/2021/01/27/mysql-install/1.PNG" class title="This is an download image">
+</li>
+<li><p>点击 <code>No thanks,just start my download</code> 跳过注册过程，直接下载压缩包。</p>
+</li>
+</ol>
+
+        <h1 id="安装与配置">
+          <a href="#安装与配置" class="heading-link"><i class="fas fa-link"></i></a><a href="#安装与配置" class="headerlink" title="安装与配置"></a>安装与配置</h1>
+      <ul>
+<li><p>在指定路径解压，将解压后 bin 文件的路径（<code>D:\mysql-8.0.23-winx64\bin</code>）添加到系统环境变量中：</p>
+<blockquote>
+<p>我的电脑-&gt;属性-&gt;高级-&gt;环境变量<br>选择PATH,在其后面添加: 你的 mysql bin 文件夹的路径</p>
+</blockquote>
+</li>
+<li><p>使用管理员身份打开 cmd：</p>
+<blockquote>
+<p>在开始菜单中输入 cmd，选择用管理员身份打开；</p>
+</blockquote>
+</li>
+<li><p>跳转到 mysql bin 目录下：</p>
+<img src="/2021/01/27/mysql-install/2.PNG" class title="This is an bin path"></li>
+<li><p>安装 mysql</p>
+<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld -install</span><br></pre></td></tr></table></div></figure></li>
+<li><p>初始化 mysql（一定要初始化！否则容易导致启动不成功）</p>
+<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld --initialize</span><br></pre></td></tr></table></div></figure></li>
+<li><p>启动服务</p>
+<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$net start mysql</span><br></pre></td></tr></table></div></figure>
+<img src="/2021/01/27/mysql-install/3.PNG" class title="This is an start successfully image">
+
+<blockquote>
+<p>这里直接写 mysql 是因为我主机服务中 mysql 的服务名就是 mysql，如果大家出现了启动不成功的情况可以自行搜索是不是服务名不同。</p>
+</blockquote>
+</li>
+<li><p>登录 mysql：</p>
+<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -u root -p</span><br></pre></td></tr></table></div></figure>
+<p>据说第一次登录不需要密码，直接按回车就好了，但是博主按了回车发现不行。出现报错 <code>ERROR 1045 (28000): Access denied for user &#39;root&#39;@&#39;localhost&#39; (using password: NO)</code></p>
+<img src="/2021/01/27/mysql-install/4.PNG" class title="This is an start failed image">
+<p>看来还是需要我们输入密码，下面一起找密码吧：</p>
+<ol>
+<li>打开 mysql 的根目录下名为 data 的文件夹；</li>
+<li>找到以 <code>.err</code> 为结尾的文件（专门记录报错信息的）并打开；</li>
+<li>找到自动生成的密码啦！<img src="/2021/01/27/mysql-install/5.PNG" class title="This is an password image"></li>
+<li>输入密码即可~<img src="/2021/01/27/mysql-install/6.PNG" class title="This is an load successfully image">
+
+</li>
+</ol>
+</li>
+</ul>
+
+        <h1 id="通过-vscode-连接-mysql">
+          <a href="#通过-vscode-连接-mysql" class="heading-link"><i class="fas fa-link"></i></a><a href="#通过-vscode-连接-mysql" class="headerlink" title="通过 vscode 连接 mysql"></a>通过 vscode 连接 mysql</h1>
+      <p>待更新~~~</p>
+</div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ 本文结束，感谢您的阅读 ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">本文作者: </span><span class="copyright-author__value"><a href="https://github.com/karin0018/karin0018.github.io">Karin Lv</a></span></div><div class="copyright-link"><span class="copyright-link__name">本文链接: </span><span class="copyright-link__value"><a href="https://github.com/karin0018/karin0018.github.io/2021/01/27/mysql-install/">https://github.com/karin0018/karin0018.github.io/2021/01/27/mysql-install/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">版权声明: </span><span class="copyright-notice__value">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> 许可协议。转载请注明出处！</span></div></div><div class="post-tags"><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="https://github.com/karin0018/karin0018.github.io/tags/mysql/">mysql</a></span></div><nav class="post-paginator paginator"><div class="paginator-next"><a class="paginator-next__link" href="/2021/01/26/hexo-stun/"><span class="paginator-prev__text">hexo+stun博客搭建</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div><div class="comments" id="comments"><div id="utterances-container"></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">文章目录</span><span class="sidebar-nav-ov">站点概览</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD"><span class="toc-number">1.</span> <span class="toc-text">
+          下载</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE"><span class="toc-number">2.</span> <span class="toc-text">
+          安装与配置</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%80%9A%E8%BF%87-vscode-%E8%BF%9E%E6%8E%A5-mysql"><span class="toc-number">3.</span> <span class="toc-text">
+          通过 vscode 连接 mysql</span></a></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/icons/logo.jpg" alt="avatar"></div><p class="sidebar-ov-author__text">Karin</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/karin0018" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a><a class="sidebar-ov-social-item" href="mailto:karinlv777@gmail.com" target="_blank" rel="noopener" data-popover="social.Gmail" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">Gmail</span></a><a class="sidebar-ov-social-item" href="mailto:1263670364@qq.com" target="_blank" rel="noopener" data-popover="social.QQmail" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">QQ 邮箱</span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">3</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">2</div><div class="sidebar-ov-state-item__name">分类</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">3</div><div class="sidebar-ov-state-item__name">标签</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">你已阅读了 </span><span class="sidebar-reading-info__num">0</span><span class="sidebar-reading-info__perc">%</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2021</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>Karin Lv</span></div><div class="busuanzi"><span class="busuanzi-siteuv"><span class="busuanzi-siteuv__icon"><i class="fas fa-user"></i></span><span class="busuanzi-siteuv__info">访问人数</span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_uv"></span></span><span class="busuanzi-sitepv"><span class="busuanzi-siteuv__icon"><i class="fas fa-eye"></i></span><span class="busuanzi-siteuv__info">浏览总量</span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_pv"></span></span></div><div>To live is to change the world.</div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/gh/sukkaw/busuanzi@latest/bsz.pure.mini.js" async></script><script>function loadUtterances() {
+  var d = document, s = d.createElement('script');
+  var container = d.getElementById('utterances-container');
+
+  if (!container) {
+    return;
+  }
+  s.src = 'https://utteranc.es/client.js';
+  s.setAttribute('repo', 'karin0018/karin0018.github.io');
+  s.setAttribute('issue-term', 'title');
+  s.setAttribute('label', 'utterances');
+  s.setAttribute('theme', 'github-light');
+  s.setAttribute('crossorigin', 'anonymous');
+  s.setAttribute('async', '');
+  if (false) {
+    s.setAttribute('data-pjax-rm', '');
+  }
+  container.append(s);
+}
+
+if (false) {
+  loadUtterances();
+} else {
+  window.addEventListener('DOMContentLoaded', loadUtterances, false);
+}</script><script src="/js/utils.js?v=2.6.2"></script><script src="/js/stun-boot.js?v=2.6.2"></script><script src="/js/scroll.js?v=2.6.2"></script><script src="/js/header.js?v=2.6.2"></script><script src="/js/sidebar.js?v=2.6.2"></script></body></html>

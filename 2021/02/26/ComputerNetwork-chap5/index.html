@@ -20,7 +20,7 @@
 <meta property="og:image" content="https://github.com/2021/02/26/ComputerNetwork-chap5/13.PNG">
 <meta property="og:image" content="https://github.com/2021/02/26/ComputerNetwork-chap5/14.PNG">
 <meta property="article:published_time" content="2021-02-26T05:12:59.000Z">
-<meta property="article:modified_time" content="2021-03-01T13:45:37.978Z">
+<meta property="article:modified_time" content="2021-05-13T09:13:13.563Z">
 <meta property="article:author" content="Karin Lv">
 <meta property="article:tag" content="计算机网络">
 <meta name="twitter:card" content="summary">
@@ -53,7 +53,7 @@ var CONFIG = {
   sourcePath: {"js":"js","css":"css","images":"images"},
 };
 
-window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner header-inner--height header-inner--bgcolor"><nav class="header-nav header-nav--sticky"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-search"><span class="header-nav-search__icon"><i class="fas fa-search"></i></span><span class="header-nav-search__text">搜索</span></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">计算机网络复习 - 链路层</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2021-02-26</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-03-01</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">5.4k</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon"><i class="far fa-clock"></i></span><span class="post-meta-item__info">阅读时长</span><span class="post-meta-item__value">41分</span></span></div></header><div class="post-body">
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner header-inner--height header-inner--bgcolor"><nav class="header-nav header-nav--sticky"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-search"><span class="header-nav-search__icon"><i class="fas fa-search"></i></span><span class="header-nav-search__text">搜索</span></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">计算机网络复习 - 链路层</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2021-02-26</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-05-13</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">5.8k</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon"><i class="far fa-clock"></i></span><span class="post-meta-item__info">阅读时长</span><span class="post-meta-item__value">45分</span></span></div></header><div class="post-body">
         <h1 id="综述">
           <a href="#综述" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#综述"></a> 综述</h1>
       
@@ -261,6 +261,23 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></he
   <img src="/2021/02/26/ComputerNetwork-chap5/2.PNG" class title="This is an CRC image">
 <p><strong>每个 CRC 标准都能检测小于 r+1 比特的突发差错。</strong></p>
 <p><strong>在适当的假设下，长度大于 r+1 比特的突发差错以概率 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mo>−</mo><mn>0.</mn><msup><mn>5</mn><mi>r</mi></msup></mrow><annotation encoding="application/x-tex">1- 0.5^r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.664392em;vertical-align:0em;"></span><span class="mord">0</span><span class="mord">.</span><span class="mord"><span class="mord">5</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.02778em;">r</span></span></span></span></span></span></span></span></span></span></span> 被检测到。</strong></p>
+<p><strong>循环码性质：</strong></p>
+<p>⑴由任何多于一项的生成多项式g(x)产生的循环码能够检测所有单个错误；</p>
+<p>⑵每个被(1+x)除尽的多项式都具有偶数项。若生成多项式g(x)具有偶数项，则由它产生的编码就能检测所有奇数个错误；</p>
+<p>⑶若码长n不大于生成多项式g(x)的指数e(即n≤e)，则由g(x)产生的码能够检测所有单个和两个错码；g(x)的指数e：e是使g(x)能除尽xe+1的最小正整数；</p>
+<p>⑷若码长n不大于g1(x)的指数，则由生成多项式g(x)=(x+1)g1(x)产生的码能检测所有单个、两个及三个错误；</p>
+<p>⑸由(n-m)次多项式产生的任一循环码，能检测所有长度不超过(n-m)的突发错误；</p>
+<p>⑹ 长度为b&gt;(n-m)的突发错误中：若b=n-m+1，则不能检测部分占2 ^-(n-m-1) ；若b&gt;n-m+1，则不能检测部分占2^ -(n-m) 。</p>
+<blockquote>
+<p>为什么 G = 1011 能够检测出任何单比特错误？</p>
+<ul>
+<li>某一位出错相当于在二进制的那一位+1，对于整个接收到的二进制数来说相当于+2^i ，2^i 不能被 G= 1001 = 9 整除，因此能检测出单比特错误</li>
+</ul>
+<p>上述 G 能检测任何奇数比特错误吗？为什么？</p>
+<ul>
+<li>奇数个 1 是不能被 (11)_2 整除的（异或运算）,例如 10101 不能被 11 整除，但是 G=1001 可以被奇数个 1 整除。</li>
+</ul>
+</blockquote>
 
         <h1 id="多路访问控制mac协议">
           <a href="#多路访问控制mac协议" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#多路访问控制mac协议"></a> 多路访问控制（MAC）协议</h1>
@@ -321,8 +338,8 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></he
 </li>
 </ol>
 
-        <h2 id="mac-协议的分类">
-          <a href="#mac-协议的分类" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#mac-协议的分类"></a> MAC 协议的分类</h2>
+        <h2 id="mac-多址接入协议的分类">
+          <a href="#mac-多址接入协议的分类" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#mac-多址接入协议的分类"></a> MAC （多址接入）协议的分类</h2>
       
 <p>**信道划分 **</p>
 <ul>
@@ -868,8 +885,8 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></he
            循环冗余校验码 CRC</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A4%9A%E8%B7%AF%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6mac%E5%8D%8F%E8%AE%AE"><span class="toc-number">4.</span> <span class="toc-text">
            多路访问控制（MAC）协议</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%93%BE%E8%B7%AF%E7%9A%84%E4%B8%A4%E7%A7%8D%E7%B1%BB%E5%9E%8B"><span class="toc-number">4.1.</span> <span class="toc-text">
            链路的两种类型：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%9A%E5%9D%80%E6%8E%A5%E5%85%A5multiple-access"><span class="toc-number">4.2.</span> <span class="toc-text">
-           多址接入（Multiple Access）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#mac-%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%88%86%E7%B1%BB"><span class="toc-number">4.3.</span> <span class="toc-text">
-           MAC 协议的分类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9A%8F%E6%9C%BA%E8%AE%BF%E9%97%AE-mac-%E5%8D%8F%E8%AE%AE"><span class="toc-number">4.3.1.</span> <span class="toc-text">
+           多址接入（Multiple Access）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#mac-%E5%A4%9A%E5%9D%80%E6%8E%A5%E5%85%A5%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%88%86%E7%B1%BB"><span class="toc-number">4.3.</span> <span class="toc-text">
+           MAC （多址接入）协议的分类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9A%8F%E6%9C%BA%E8%AE%BF%E9%97%AE-mac-%E5%8D%8F%E8%AE%AE"><span class="toc-number">4.3.1.</span> <span class="toc-text">
            随机访问 MAC 协议</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%97%B6%E9%9A%99-aloha-%E5%8D%8F%E8%AE%AE"><span class="toc-number">4.3.1.1.</span> <span class="toc-text">
            时隙 ALOHA 协议</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BA%AF-aloha-%E5%8D%8F%E8%AE%AE"><span class="toc-number">4.3.1.2.</span> <span class="toc-text">
            纯 ALOHA 协议</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BD%BD%E6%B3%A2%E4%BE%A6%E5%90%AC%E5%A4%9A%E5%9D%80%E5%8D%8F%E8%AE%AE-csma"><span class="toc-number">4.3.2.</span> <span class="toc-text">
